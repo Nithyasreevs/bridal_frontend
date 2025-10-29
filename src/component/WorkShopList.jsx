@@ -2,7 +2,7 @@ import React, { useEffect, useState, useContext } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { UserContext } from '../context/UserContext'; // import your context
-import './WorkshopList.css';
+import './WorkShopList.css';
 
 export default function WorkshopList() {
   const [workshops, setWorkshops] = useState([]);
