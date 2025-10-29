@@ -166,7 +166,7 @@ export default function PaymentViewPage() {
       fontSize: '15px',
       outline: 'none',
       transition: 'all 0.3s ease',
-      background: '#FFFFFF',
+     
       boxShadow: '0 2px 4px rgba(0,0,0,0.04)',
       background: 'linear-gradient(135deg, #ffffff, #f8fafc)'
     },
