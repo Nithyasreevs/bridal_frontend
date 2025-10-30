@@ -3,6 +3,7 @@ import axios from "axios";
 import { UserContext } from "./UserContext";
 import { useNavigate } from "react-router-dom";
 
+import api from "../api";
 
 
 export const WishlistContext = createContext();
