@@ -2,14 +2,13 @@ import React, { createContext, useState, useEffect, useContext } from "react";
 import axios from "axios";
 import { UserContext } from "./UserContext";
 import { useNavigate } from "react-router-dom";
-import api from "../api";
 
 export const WishlistContext = createContext();
 
 export const WishlistProvider = ({ children }) => {
   const { user } = useContext(UserContext);
   const [wishlist, setWishlist] = useState([]);
-  const navigate = useNavigate(); // ✅ move here (top level)
+
 
   // 🔁 Fetch wishlist only when logged in
   useEffect(() => {
@@ -51,6 +50,7 @@ export const WishlistProvider = ({ children }) => {
   // ❌ Remove from wishlist
   const removeFromWishlist = async (id) => {
     if (!user?.id) {
+        const navigate = useNavigate();
       alert("Please login to remove items from your wishlist.");
       navigate("/login");
       return;
