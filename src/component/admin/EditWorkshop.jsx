@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useNavigate, useParams } from 'react-router-dom';
 import BackButton from "../BackButton";
-import api from "./api";
+import api from "../../api";
+
 export default function EditWorkshop() {
   const { id } = useParams();
   const [form, setForm] = useState({

@@ -1,7 +1,8 @@
 import React, { useEffect, useState, useMemo } from "react";
 import axios from "axios";
 import BackButton from "../BackButton";
-import api from "./api";
+import api from "../../api";
+
 const AdminViewBookings = () => {
   const [bookings, setBookings] = useState([]);
   const [staff, setStaff] = useState([]);

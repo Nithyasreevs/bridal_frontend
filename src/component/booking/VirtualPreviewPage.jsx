@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import "./VirtualPreviewPage.css";
-import api from "./api";
+import api from "../../api";
+
 const VirtualPreviewPage = ({ onNext, onBack }) => {
   const [uploadedImage, setUploadedImage] = useState(null);
   const [activeCategory, setActiveCategory] = useState("lipstick");

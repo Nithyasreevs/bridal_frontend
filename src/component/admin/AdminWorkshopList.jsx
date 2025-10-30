@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import BackButton from "../BackButton";
-import api from "./api";
+import api from "../../api";
+
 export default function AdminWorkshopsList() {
   const [workshops, setWorkshops] = useState([]);
   const navigate = useNavigate();

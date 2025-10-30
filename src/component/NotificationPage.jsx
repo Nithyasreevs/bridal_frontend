@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import api from "../api";
 
 const NotificationPage = ({ userId }) => {
   const [notifications, setNotifications] = useState([]);

@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "./feedback.css";
-import api from "./api";
+import api from "../api";
+
 export default function FeedbackPage() {
   const [form, setForm] = useState({
     name: "",

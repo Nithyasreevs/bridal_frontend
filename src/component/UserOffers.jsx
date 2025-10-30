@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./Offers.css";
-import api from "./api";
+import api from "../api";
+
 export default function UserOffers() {
   const [offers, setOffers] = useState([]);
 

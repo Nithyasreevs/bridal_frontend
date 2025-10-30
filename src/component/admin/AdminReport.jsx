@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import BackButton from "../BackButton";
-import api from "./api";
+import api from "../../api";
+
 const AdminReport = () => {
   const [reportData, setReportData] = useState(null);
   const [loading, setLoading] = useState(true);

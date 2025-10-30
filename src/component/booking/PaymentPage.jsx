@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./PaymentPage.css";
-import api from "./api";
+import api from "../../api";
+
 const PaymentPage = ({ bookingData, onBack }) => {
   const [isProcessing, setIsProcessing] = useState(false);
   const [paymentStatus, setPaymentStatus] = useState(null);

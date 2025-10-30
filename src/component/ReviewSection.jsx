@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "./ReviewSection.css";
-import api from "./api";
+import api from "../api";
+
 export default function ReviewSection() {
   const [reviews, setReviews] = useState([]);
 

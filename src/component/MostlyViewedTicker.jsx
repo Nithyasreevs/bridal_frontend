@@ -2,7 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { getGlobalViews } from "./utils/analytics";
 import "./mostlyViewedTicker.css";
-import api from "./api";
+import api from "../api";
+
 // Map of services with their image & route
 const ALL_SERVICES = [
   {
