@@ -4,7 +4,7 @@ import { useUser } from "../context/UserContext"; // ✅ use context
 import ReviewSection from "./ReviewSection";
 import RecentlyViewed from "./RecentlyViewed";
 import MostlyViewedTicker from "./MostlyViewedTicker"; // ✅ added back
-
+import api from "./api";
 import "./Home.css";
 
 export default function Home() {

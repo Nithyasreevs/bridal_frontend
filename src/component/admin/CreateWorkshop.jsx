@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import BackButton from "../BackButton";
-
+import api from "./api";
 export default function CreateWorkshop() {
   const [form, setForm] = useState({
     title: '',

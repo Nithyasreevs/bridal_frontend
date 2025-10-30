@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useFontStyle } from "../context/FontStyleContext";
 import "./NoteEditor.css";
-
+import api from "./api";
 export default function FloatingPanel() {
   const {
     fontSize,

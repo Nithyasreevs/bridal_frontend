@@ -4,7 +4,7 @@
 import React, { useContext } from "react";
 import { WishlistContext } from "./WishlistContext";
 import "./wishlist.css"; // ✅ Import the new CSS file
-
+import api from "./api";
 const WishlistPage = () => {
   const { wishlist, toggleWishlist } = useContext(WishlistContext);
 

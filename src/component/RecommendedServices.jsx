@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Services.css";
-
+import api from "./api";
 export default function RecommendedServices({ recommendations = [] }) {
   const items = Array.isArray(recommendations) ? recommendations.slice(0, 3) : [];
   if (items.length === 0) return null;

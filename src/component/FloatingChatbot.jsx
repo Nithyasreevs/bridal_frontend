@@ -2,7 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import axios from "axios";
 import { useUser } from "../context/UserContext.jsx";
 import { useNavigate } from "react-router-dom";
-
+import api from "./api";
 export default function FloatingChatbot() {
   const { user } = useUser();
   const [messages, setMessages] = useState([]);

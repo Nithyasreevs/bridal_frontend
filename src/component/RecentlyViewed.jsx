@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useUser } from "../context/UserContext"; 
 import "./Services.css";
 import "./recentlyViewed.css";
-
+import api from "./api";
 export default function RecentlyViewed() {
   const [items, setItems] = useState([]);
   const { user } = useUser(); // get user from context

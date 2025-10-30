@@ -2,7 +2,7 @@ import React, { useState, useContext } from "react";
 import { useNavigate } from "react-router-dom"; // for redirect
 import { UserContext } from "../../context/UserContext";
 import "./BookingPage.css";
-
+import api from "./api";
 const initialEventTypesList = ["Marriage", "Reception", "Engagement"];
 
 const servicesList = [

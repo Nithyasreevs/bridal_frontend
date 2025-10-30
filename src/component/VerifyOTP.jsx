@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import axios from "axios";
-
+import api from "./api";
 export default function VerifyOTP() {
   const { email } = useParams();
   const [otp, setOtp] = useState("");

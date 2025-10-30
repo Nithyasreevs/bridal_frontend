@@ -3,7 +3,7 @@ import { useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 import { UserContext } from "../context/UserContext";
 import "./login.css";
-
+import api from "./api";
 export default function Login() {
   const [role, setRole] = useState("user");
   const [email, setEmail] = useState("");

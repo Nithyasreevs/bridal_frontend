@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from "react";
 import { UserContext } from "../context/UserContext";
 import { useNavigate } from "react-router-dom";
 import "./UserDashboard.css";
-
+import api from "./api";
 const UserDashboard = () => {
   const { user, logout } = useContext(UserContext);
   const navigate = useNavigate();

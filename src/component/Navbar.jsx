@@ -2,7 +2,7 @@ import React, { useEffect, useContext } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { UserContext } from "../context/UserContext";
 import "./Navbar.css";
-
+import api from "./api";
 export default function Navbar() {
   const location = useLocation();
   const { user, role, logout } = useContext(UserContext);

@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useMemo } from 'react';
 import axios from 'axios';
 import BackButton from "../BackButton";
-
+import api from "./api";
 export default function AdminAllRegistrations() {
   const [workshops, setWorkshops] = useState([]);
   const [loading, setLoading] = useState(true);

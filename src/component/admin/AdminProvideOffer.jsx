@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import BackButton from "../BackButton";
-
+import api from "./api";
 export default function AdminProvideOffer() {
   const [offer, setOffer] = useState({
     title: "",

@@ -2,7 +2,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import { UserContext } from '../context/UserContext'; // adjust path if needed
-
+import api from "./api";
 export default function WorkshopRegistration() {
   const { id } = useParams();
   const navigate = useNavigate();

@@ -3,7 +3,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { UserContext } from '../context/UserContext'; // import your context
 import './WorkShopList.css';
-
+import api from "./api";
 export default function WorkshopList() {
   const [workshops, setWorkshops] = useState([]);
   const navigate = useNavigate();

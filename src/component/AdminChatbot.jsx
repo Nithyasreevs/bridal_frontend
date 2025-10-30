@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import axios from "axios";
+import api from "./api";
 import { useUser } from "../context/UserContext.jsx";
 export default function AdminChatbot() {
   const { user, role } = useUser();

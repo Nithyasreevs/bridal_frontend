@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useMemo } from "react";
 import BackButton from "../BackButton";
-
+import api from "./api";
 export default function ContactView() {
   const [contacts, setContacts] = useState([]);
   const [loading, setLoading] = useState(true);

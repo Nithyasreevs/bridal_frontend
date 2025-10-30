@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import "./signup.css";
-
+import api from "./api";
 export default function SignUpPage() {
   const [form, setForm] = useState({
     name: "",

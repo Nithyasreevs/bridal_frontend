@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from "react";
 import axios from "axios";
 import BackButton from "../BackButton";
-
+import api from "./api";
 export default function AdminReviewPage() {
   const [reviews, setReviews] = useState([]);
   const [loading, setLoading] = useState(true);
