@@ -2,7 +2,8 @@ import React, { createContext, useState, useEffect, useContext } from "react";
 import axios from "axios";
 import { UserContext } from "./UserContext";
 import { useNavigate } from "react-router-dom";
-import api from "./api";
+import api from "../api";
+
 export const WishlistContext = createContext();
 
 export const WishlistProvider = ({ children }) => {
